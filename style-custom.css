@@ -1,0 +1,113 @@
+.hidden {
+    display: none;
+}
+.clock {
+    display: flex;
+}
+
+.clock div {
+    position: relative;
+    margin: 0 5px;
+    width: 200px;
+    height: 200px;
+}
+
+.clock div p {
+    position: relative;
+    font-family: 'Lobster', cursive;
+    display: flex;
+    width: 200px;
+    height: 160px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(106.5deg, rgba(255, 215, 185, 0.91) 23%, rgba(223, 159, 247, 0.8) 93%);
+    z-index: 1;
+    font-size: 80px;
+    border: none;
+    box-shadow: 0px 34px 45px 0px rgba(0, 0, 0, 0.56);
+}
+
+.clock div p:first-child {
+    border-radius: 20px 20px 0 0;
+}
+
+.clock div p:last-child {
+    font-size: 30px;
+    height: 80px;
+    background-color: #f4e04d;
+    border-radius: 0 0 20px 20px;
+}
+
+.clock div:last-child p {
+    background-color: #7A15A2;
+    color: white;
+}
+
+.clock div:last-child p:last-child {
+    background-color: #510F6B;
+    color: white;
+}
+footer{
+    margin-top: 30px;
+}
+
+
+#lyricsText {
+    opacity: 0; /* Ẩn ban đầu */
+    transition: opacity 0.3s ease-in-out; /* Hiệu ứng hiển thị */
+    color: white !important;
+    transform: translateX(100%); /* Di chuyển chữ ra phải ngoài khỏi khung */
+    animation: slideIn 10s linear forwards; /* Áp dụng animation slideIn trong 10 giây */
+}
+
+#lyricsText.show {
+    opacity: 1; /* Hiển thị khi được kích hoạt */
+    color: blue;
+    transform: translateX(0); /* Di chuyển chữ về vị trí ban đầu */
+}
+.modal-content{
+    min-height: 450px;
+    height: auto;
+    background-color: #7A15A2;
+    border-radius: 30px;
+}
+#modalLyrics.fade-out {
+    transition: opacity 1s ease-in-out;
+    opacity: 0; /* Mờ dần khi modal được đóng */
+    pointer-events: none; /* Tắt sự kiện click khi modal đã đóng */
+}
+/* CSS cho popup */
+#lyrics-popup {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: none;
+  }
+  @keyframes slideIn {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@keyframes textAnimation {
+    0% {
+      font-size: 100px; /* Kích thước ban đầu */
+    }
+    50% {
+      font-size: 150px; /* Kích thước lớn nhất */
+    }
+    100% {
+      font-size: 100px; /* Trở lại kích thước ban đầu */
+    }
+  }
+
+
+
+  
