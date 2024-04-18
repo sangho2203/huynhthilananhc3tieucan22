@@ -38,7 +38,7 @@ function clock() {
   let isLyricShown = false; 
   // Hiển thị phần content khi đồng hồ đếm đến tháng thứ 6
   if (elapsedMonths >= 6 && isLyricShown == false) {
-    content.style.display = "block";
+ 
     showLyricHTML();
     isLyricShown = true; // Đánh dấu rằng hàm đã được gọi
   }
