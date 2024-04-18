@@ -61,7 +61,8 @@ footer{
 }
 h5.modal-title{
     color: #DDA1D3 !important;
-    
+        font-family: cursive;
+    font-size: 50px;
 }
 
 #lyricsText.show {
