@@ -55,9 +55,13 @@ footer{
 #lyricsText {
     opacity: 0; /* Ẩn ban đầu */
     transition: opacity 0.3s ease-in-out; /* Hiệu ứng hiển thị */
-    color: white !important;
+    color: #DDA1D3 !important;
     transform: translateX(100%); /* Di chuyển chữ ra phải ngoài khỏi khung */
     animation: slideIn 10s linear forwards; /* Áp dụng animation slideIn trong 10 giây */
+}
+h5.modal-title{
+    color: #DDA1D3 !important;
+    
 }
 
 #lyricsText.show {
